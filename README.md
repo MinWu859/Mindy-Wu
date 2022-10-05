@@ -1,2 +1,2 @@
-# Mindy-Wu Digital110
+# Digit classes
 DIGIT 110
