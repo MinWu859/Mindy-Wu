@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Model Site</title>
+        <title>Mindy's story</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="style.css" />
@@ -13,7 +13,7 @@
     </head>
     <body>
         <!--ebb: Here inside the <body> element is where the code for the visible display of a website appears. -->
-        <h1>introDH-Hub Model Website</h1>
+        <h1>Story for Mindy Wu</h1>
         <!-- ebb: I've commented out some code for a super simple site navigation menu. 
             For the links to work, we'll need a <p> element to wrap around the contents:
         <nav class="menuA">
@@ -27,71 +27,32 @@
      See https://www.w3schools.com/css/css_navbar.asp
       -->
         <nav>
-            <img class="photo" src="images/littleNewt.jpg" alt="pet Japanese firebelly newt" />
             <ul class="menuB">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="essays.html">DIGIT 100 Essays</a></li>
+                <li><a href="index.html"><h3>Info</h3></a></li>
+                <li><a href="resume.html"><h3>Resume</h3></a></li>
+                <li><a href="gallery.html"><h3>Gallery</h3></a></li>
+                <li><a href="essays.html"><h3>Reflection</h3></a></li>
             </ul>
         </nav>
         
       <section>  
-          <h1>Experimenting with HTML links: Absolute and Relative links</h1>
-        <p>Welcome to our <a href="sampleXHTML.html">sample</a> website on GitHub Pages!</p>
+          <h1>About: Mindy Wu’s personal website that introducing her school experience and personal profile.</h1>
+          <h2>Personal Profile</h2>
+          <p>Mindy Wu, a digital major student in Penn State Erie. She comes from a coastal city in south China; She loves watching movies, taking selfie, and traveling arould the world. She also wants to have a deep understanding in Digit Media study.</p>
       
-      
-      
-        <p>Here is a sample link to another website outside of this site. This link holds an
-                <dfn>absolute URL</dfn>
-            <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend College</a>. Here is another link for an <dfn>absolute URL</dfn> that 
-            takes you to <a href="https://github.com/newtfire/introDH-Hub">the "code view" of the introDH-Hub GitHub repository</a>. Can you change
-        this to point to the code view of your own GitHub repository?</p>
-        <p>But here is a link to another page inside my website: this is a <dfn>relative URL</dfn>:
-                <a href="innerPage.html">inner page on this website</a>.</p>
-        <p>Here is another relative link to <a href="sampleXHTML.html">a page inside my website
-                (inside the same docs/ directory that holds this index.html file).</a>.</p>
-        <p>We are writing HTML in the XHTML syntax, which means that all elements (including
-            self-closing elements like <code>&lt;img&gt;</code>) must indicate how they close. All
-            elements in XHTML syntax must have a start tag and an end tag, or indicate that they are
-            self-closing. </p>
-      </section>
+          <h2>School experience</h2>
+          <p>She spent the first two year of her college in UC Riverside. She was major in Film-Making in that time.And she missed the campus life in UCR so much.</p>
+          <h3>Here are some beautiful photographs for UC Riverside</h3>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/K8mJ2JBcXDSv9n9VY1J8Jg/o.jpg" width="650" height="600"/>
+          <img src="https://www.rockycoastbuilders.com/wp-content/uploads/2015/08/projects_ucr-4.jpg" width="650" height="600"/>
+         </section>
         
+         <section><h3>During my school years in UCR,I also made some Chinese friends there and hade a great time with them.</h3></section>
+        <section><h3>Here are pictures that me having fun with my Chinese friends</h3></section>
+        <img src="ucr.jpg" alt="Having music party" width="650" height="600"/>
+        <img src="jh.jpg" alt="Eating BBQ together" width="650" height="600"/>
         
-        <section>
-            <h2>An unordered list of amphibians</h2>
-            <ul>
-                <li>salamander (also known as newt)</li>
-                <li>frog</li>
-                <li>toad</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Introducing images</h2>
-            <p>Images can be tricky to format. First let's just include them on the website. In your code, you point to an image file in your file directory
-                to make it appear on the page when it is published.</p>
-            <p>The <code>img</code> element is the basic code for including an image file on your page. The <code>@src</code> attribute points to a filepath
-                to your image. The <code>@alt</code> attribute provides a text description for screen readers, helping your images to be accessible to non-sighted readers
-                and also to assist with search retrievals (say, google searches) by providing some context of what's in the image. 
-                Writing code on a site to assist with search retrieval is called <dfn>Search Engine Optimization (SEO)</dfn>.
-            </p>
-            <p>Other code is here for styling and blocking on the page. A <code>figure</code> element is intended to help organize images and captions in a 
-            little nested structure, that makes it convenient to style for proportion on the page. I am also adding a <code>@class</code> attribute to help
-            me with styling different kinds of images (photos vs. small icons on my site). I write <a href="style.css">CSS code</a> to find elements with a <code>class="photo"</code>
-            and style them all the same way, and I put that code in a separate file so it can handle styling the same way across all the pages on my
-            website. I link that CSS stylesheet to my HTML files up in the <code>head</code> element. <em>Can you find the CSS <code>link</code> line in this file?</em></p>
-            
-            <figure class="photoGallery">
-                <img class="photo" src="images/littleNewt.jpg" alt="pet Japanese firebelly newt" />
-                <figcaption>Photo of my pet firebelly newt.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/cockatoo.jpg" alt="Dr. B's firebelly newt image" />
-                <figcaption>Image of a cockatoo from Australia or New Zealand. Source:<a
-                    href="http://nzbirdsonline.org.nz/species/sulphur-crested-cockatoo"> New Zealand
-                    Birds Online</a>. </figcaption>
-            </figure>
-               
-        </section>
+        <section><h2>Here is the link to UCR school webpage.You can find out some intersting details about UCR</h2></section>
+        <p><a href="https://www.ucr.edu/">Welcome to UCR website</a></p>
     </body>
 </html>

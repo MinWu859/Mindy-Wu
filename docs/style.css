@@ -1,14 +1,39 @@
 
 body {color: black;
-background-color: pink;
+background-color:pink;
 font-family: arial, helvetica, sans-serif; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: green;
+}
 
 
 
 p {padding:1em; line-height:2em;}
 
 body section.writing {
-    background-color:blue;
+    background-color:white;
     margin:auto;
     padding:2em;
 
@@ -27,8 +52,8 @@ section.writing div.analysis {
       flex:1; 
 
     padding: 3vw;
-    background-color:maroon;
-    color:white;
+    background-color:Yellow
+    
     
 }
 
