@@ -26,10 +26,3 @@ function changeColor2() {
 
     /* here, style is a *property*: the CSS styling of an element: you can add a CSS property after invoking style. */
 
-
-
-
-
-
-
-
