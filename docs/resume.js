@@ -1,7 +1,8 @@
-window.addEventListener('DOMContentLoaded',init,false);
+window.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
-    var fieldset = document.getElementsByTagName('input');
+    var fieldset = document.querySelectorAll('input[type="checkbox"]'); // Use querySelectorAll to select checkboxes.
+
     for (var i = 0; i < fieldset.length; i++) {
         fieldset[i].addEventListener('click', toggle, false);
     }
@@ -9,29 +10,30 @@ function init() {
 
 function toggle() {
     var id = this.id;
+
     switch (id) {
         case "CHARtoggle": {
             var chars = document.getElementsByClassName("character");
             for (var i = 0; i < chars.length; i++) {
-                chars[i].classList.toggle("on")
+                chars[i].classList.toggle("on");
             }
-        };
-        break;
+            break;
+        }
         case "PLtoggle": {
             var states = document.getElementsByClassName("states");
-            for (var i = 0; i < staates.length; i++) {
-                states[i].classList.toggle("on")
+            for (var i = 0; i < states.length; i++) { // Corrected the typo 'staates' to 'states'.
+                states[i].classList.toggle("on");
             }
-        };
-        break;
+            break;
+        }
         case "OBtoggle": {
             var objects = document.getElementsByClassName("object");
             for (var i = 0; i < objects.length; i++) {
-                objects[i].classList.toggle("on")
+                objects[i].classList.toggle("on");
             }
-        };
-        break;
+            break;
+        }
     }
-  }
+}
 
-window.onload = init;
+window.addEventListener('load', init, false); // Use addEventListener for consistency.
