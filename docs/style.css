@@ -123,7 +123,9 @@ nav#menu {padding:2vw; }
  border-radius: 20px;
  }
  
-span.states.on {color:#3333CC}
-span.character.on {color:#FF3300}
-span.object.on {color:#477519}
+span.States.on {color:#3333CC}
+span.Characters.on {color:#FF3300}
+span.Objects.on {color:#477519}
+
+
  

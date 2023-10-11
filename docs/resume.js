@@ -1,27 +1,38 @@
+window.addEventListener('DOMContentLoaded', init, false);
+
 function init() {
-    // Get all the checkboxes within the fieldset
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-    // Attach a click event listener to each checkbox
-    checkboxes.forEach(function(checkbox) {
-        checkbox.addEventListener('click', function() {
-            toggle(this); // Pass the clicked checkbox as an argument to the toggle function
-        });
-    });
-}
-
-function toggle(checkbox) {
-    // Define the target class based on the checkbox's ID
-    var targetClass = checkbox.id.replace("toggle", "").toLowerCase();
-
-    // Get all elements with the target class
-    var elements = document.getElementsByClassName(targetClass);
-
-    // Toggle the 'on' class for each element
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.toggle("on");
+    originalBackground = document.body.style.backgroundColor;
+    var checkboxes = document.getElementsByTagName('input');
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener('click', toggle, false);
     }
 }
 
-// Execute the 'init' function when the page loads
+function toggle() {
+    var id = this.id;
+    switch (id) {
+        case "CHARtoggle": {
+            var chars = document.getElementsByClassName("Characters");
+            for (var i = 0; i < chars.length; i++) {
+                chars[i].classList.toggle("on")
+            }
+        };
+        break;
+        case "PLtoggle": {
+            var places = document.getElementsByClassName("States");
+            for (var i = 0; i < places.length; i++) {
+                places[i].classList.toggle("on")
+            }
+        };
+        break;
+        case "OBtoggle": {
+            var objects = document.getElementsByClassName("Objects");
+            for (var i = 0; i < objects.length; i++) {
+                objects[i].classList.toggle("on")
+            }
+        };
+        break;
+    }
+  }
+
 window.onload = init;
