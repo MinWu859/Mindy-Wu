@@ -11,7 +11,7 @@ function init() {
 
 function changeColor() {
 var colorMe1 = document.getElementById("colorToggle") 
-{colorMe1.style.backgroundColor = "white";
+{colorMe1.style.backgroundColor = "pink";
 }
 }
 
