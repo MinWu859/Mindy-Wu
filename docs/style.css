@@ -80,7 +80,7 @@ body section.gallery {
 section.gallery figure {flex: 1; margin:auto; padding-top: 1vw; padding-bottom: 1vw; }
 figcaption {font-style: italic; font-size: smaller;}
 
-img.photo {max-width:500px; width:80%}
+img.photo {max-width:100px; width:20%}
 
 
 ol {list-style-type: lower-alpha;
@@ -127,5 +127,136 @@ span.States.on {color:#3333CC}
 span.Characters.on {color:#FF3300}
 span.Objects.on {color:#477519}
 
+body {
+  background: #fff;
+}
 
- 
+svg {
+  max-height: 50vh;
+  max-width: 50%;
+}
+
+.sun__bg {
+  transform: translateY(100%);
+  animation: fromTop 0.5s 1s ease forwards;
+  transform-box: fill-box;
+}
+
+.sun__top {
+  transform: rotateZ(180deg);
+  animation: rotateIn 1s 1.4s ease-in-out forwards;
+  transform-origin: center top;
+  transform-box: fill-box;
+}
+
+.sun__lines > path {
+  transform: scaleX(0);
+  animation: scaleXIn 0.5s 2.5s ease-in-out forwards;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+.sun__lines > path:nth-child(2) {
+  animation-delay: 2.6s;
+}
+
+.sun__lines > path:nth-child(3) {
+  animation-delay: 2.7s;
+}
+
+.sun__lines > path:nth-child(4) {
+  animation-delay: 2.8s;
+}
+
+.sun__lines > path:nth-child(5) {
+  animation-delay: 2.9s;
+}
+
+.sun__lines > path:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.sun__lines > path:nth-child(7) {
+  animation-delay: 3.1s;
+}
+
+.sun__lines > path:nth-child(8) {
+  animation-delay: 3.2s;
+}
+
+.sun__lines > path:nth-child(9) {
+  animation-delay: 3.3s;
+}
+
+.sun__lines > path:nth-child(10) {
+  animation-delay: 3.4s;
+}
+
+.sun__lines > path:nth-child(11) {
+  animation-delay: 3.5s;
+}
+
+.sun__lines > path:nth-child(12) {
+  animation-delay: 3.6s;
+}
+
+.sun__lines > path:nth-child(13) {
+  animation-delay: 3.7s;
+}
+
+.sun__lines > path:nth-child(14) {
+  animation-delay: 3.8s;
+}
+
+.sun__lines > path:nth-child(15) {
+  animation-delay: 3.9s;
+}
+
+.sun__lines > path:nth-child(16) {
+  animation-delay: 4s;
+}
+
+.sun__lines > path:nth-child(17) {
+  animation-delay: 4.1s;
+}
+
+
+@keyframes rotateIn {
+  from {
+    transform: rotateZ(180deg);
+  } to {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes fromTop {
+    from {
+    transform: translateY(100%);
+  } to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleXIn {
+  from {
+    transform: scaleX(0);
+  }
+  
+  to {
+        transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
