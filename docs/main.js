@@ -9,7 +9,7 @@ import * as THREE from 'three';
         
         // create a new renderer by instating the canvas element in our HTML // file
         const renderer = new THREE.WebGLRenderer({
-          canvas: document.querySelector('#bg'),
+          canvas: document.querySelector('#bg')
         });
       
       renderer.render(scene, camera);
@@ -22,9 +22,9 @@ import * as THREE from 'three';
         const geometry = new THREE.BoxGeometry(10, 10, 10);
         
         //set the color of the basic material in the object parameters `{}`
-
-        const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
-
+        
+        const material = new THREE.MeshBasicMaterial( { color: 0xFF6347 } );
+        
         const cube = new THREE.Mesh( geometry, material );
         
         scene.add( cube );
@@ -46,7 +46,7 @@ import * as THREE from 'three';
         
         // Lights
         
-        const pointLight = new THREE.PointLight(0xffffff, 2);
+        const pointLight = new THREE.PointLight(0xffffff);
         pointLight.position.set(0, -10, 10);
         
         const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -55,7 +55,20 @@ import * as THREE from 'three';
         scene.add(pointLight);
         scene.add(ambientLight);
         
-
+        const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
+        
+        function animate() {
+            requestAnimationFrame( animate );
+        // slowly rotate the cube:
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        // rotate the icosahedron a little faster in the opposite direction:
+        icoMesh.rotation.z += -0.03
+        icoMesh.rotation.y += -0.03
+        
+            renderer.render( scene, camera );
+        }
+        
         // Helpers
         
         const lightHelper = new THREE.PointLightHelper(pointLight);
