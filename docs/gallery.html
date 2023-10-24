@@ -1,69 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
     <head>
-        <title>Mindy's story</title>
+        <title>Three JS Demo</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="Gallery.css" />
-        
-        <!--2021-02-02 ebb: The code inside the <head> element is not for display in the web browser, but it holds important information about the website's contents.
-    The text inside the <title> element appears in the top tab of a web browser. The meta elements give instructions for how the browser window will behave, 
-    and the <link> element pulls in a CSS stylesheet from another (external) file you'll save in your website directory. 
-    -->
-    </head>
+        <script type="module" src="./main.js"> 
+                <link rel="stylesheet" type="text/css" href="style.css" />
+        </head>
     <body>
-        <!--ebb: Here inside the <body> element is where the code for the visible display of a website appears. -->
-        <h1>Story for Mindy Wu</h1>
-        <!-- ebb: I've commented out some code for a super simple site navigation menu. 
-            For the links to work, we'll need a <p> element to wrap around the contents:
-        <nav class="menuA">
-            <p>
-                <a href="index.html">Home</a> | <a href="starter.html">Starting HTML Example</a> |
-                    <a href="resume.html">Resume</a> | <a href="gallery.html">Gallery</a> | Course
-                Posts 
-            </p>
-        </nav>-->
-        <!--ebb: Site Navigation Menu Code B: You can decide if you want this to be a horizontal or vertical arrangement, and make the bullets disappear using CSS.
-     See https://www.w3schools.com/css/css_navbar.asp
-      -->
-        <nav>
-            <ul class="menuB">
-                <li><a href="index.html">Info</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="Reflection.html">Reflection</a></li>
-                <li><a href=" https://sites.psu.edu/myinfodigit100/my-portfolio/">Wordpress Link</a></li>
-                <li><a href=" https://github.com/MinWu859/Mindy-Wu"> <img src="GitHub.png" height="60"/></a></li>
-            </ul>
-        </nav>
-        
-        <section>
-            <h1>Gallery</h1>
-            <h2>My photography Works</h2>
-           </section>
-        
-        <div id="gallery">
-            <img src="20.JPG"  width="400" class="gallery"/> 
-            <img src="21.JPG"  width="400" class="gallery"/>
-            <img src="23.JPG"  width="400" height="300" class="gallery"/>
-            <img src="24.JPG"  width="400" class="gallery"/>
-            <img src="25.JPG"  width="400" class="gallery"/>    
-        </div>
-        
-           <section>
-            <h2>My personal profiles</h2>
-            </section> 
-        
-        
-        <div id="profile">
-            <img src="55.jpg"  width="400" class="profile"/> 
-            <img src="profile1.jpg"  width="400" class="profile"/>
-            <img src="profile2.jpg"  width="400" class="profile"/>
-            
-               
-        </div>
-        
-        
-        
+        <canvas id="bg"></canvas>
+        <script type="module" src="/main.js"></script>
     </body>
 </html>
